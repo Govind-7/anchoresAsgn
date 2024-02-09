@@ -1,0 +1,21 @@
+.selected-item {
+  background-color: black;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  color: white;
+}
+
+.posts-bg {
+  display: flex;
+  justify-content: space-around;
+}
+
+.massage-container {
+  background-color: rgb(93, 92, 92);
+  color: aliceblue;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
