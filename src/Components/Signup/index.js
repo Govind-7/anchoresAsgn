@@ -13,7 +13,7 @@ const Signup = () => {
   const verification = async (event) => {
     event.preventDefault();
     const details = { email, username };
-    const url = "http://localhost:5000/api/signup";
+    const url = "https://anchores.onrender.com/api/signup";
     const options = {
       method: "POST",
       headers: {
@@ -39,7 +39,7 @@ const Signup = () => {
   const verifyPass = async (event) => {
     event.preventDefault();
     const details = { otp: pass };
-    const url = "http://localhost:5000/api/verify";
+    const url = "https://anchores.onrender.com/api/verify";
     const options = {
       method: "POST",
       headers: {

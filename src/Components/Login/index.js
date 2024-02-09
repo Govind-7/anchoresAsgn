@@ -15,7 +15,7 @@ const Login = (props) => {
   const verification = async (event) => {
     event.preventDefault();
     const details = { email };
-    const url = "http://localhost:5000/api/login";
+    const url = "https://anchores.onrender.com/api/login";
     const options = {
       method: "POST",
       headers: {
@@ -42,7 +42,7 @@ const Login = (props) => {
   const verifyPass = async (event) => {
     event.preventDefault();
     const details = { otp: pass };
-    const url = "http://localhost:5000/api/verify";
+    const url = "https://anchores.onrender.com/api/verify";
     const options = {
       method: "POST",
       headers: {

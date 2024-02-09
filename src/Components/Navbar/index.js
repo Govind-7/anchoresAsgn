@@ -9,7 +9,7 @@ const Navbar = () => {
   const [user, setUser] = useState("");
   const [verify, setVerify] = useState(false);
   const userdetails = async () => {
-    const url = "http://localhost:5000/api/profile";
+    const url = "https://anchores.onrender.com/api/profile";
     const token = Cookies.get("jwt_toke");
     // console.log("from navbar", token);
     const options = {

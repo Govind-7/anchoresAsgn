@@ -38,7 +38,7 @@ const Posts = () => {
   };
 
   const allpostsFunc = async () => {
-    const url = "http://localhost:5000/api/allpost";
+    const url = "https://anchores.onrender.com/api/allpost";
     const options = {
       method: "GET",
       headers: {
@@ -51,7 +51,7 @@ const Posts = () => {
   };
 
   const commentedFunc = async () => {
-    const url = "http://localhost:5000/api/commented";
+    const url = "https://anchores.onrender.com/api/commented";
     const options = {
       method: "GET",
       headers: {
@@ -64,7 +64,7 @@ const Posts = () => {
   };
 
   const replyiedFunc = async () => {
-    const url = "http://localhost:5000/api/replied";
+    const url = "https://anchores.onrender.com/api/replied";
     const options = {
       method: "GET",
       headers: {
@@ -100,7 +100,7 @@ const Posts = () => {
         },
         body: JSON.stringify(data),
       };
-      const url = "http://localhost:5000/api/postcomment";
+      const url = "https://anchores.onrender.com/api/postcomment";
       const response = await fetch(url, options);
       const resdata = await response.json();
       console.log(resdata);
