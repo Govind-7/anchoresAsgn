@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Navigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import Navbar from "../Navbar";
@@ -75,11 +75,11 @@ const Posts = () => {
     const jsonDt = await response.json();
     setReplyposts(jsonDt);
   };
-  useEffect(() => {
-    allpostsFunc();
-    commentedFunc();
-    replyiedFunc();
-  }, []);
+  // useEffect(() => {
+  //   allpostsFunc();
+  //   commentedFunc();
+  //   replyiedFunc();
+  // }, []);
   function containsNumber(str) {
     return /^[a-zA-Z" "]+$/.test(str);
   }
