@@ -26,7 +26,7 @@ const Login = (props) => {
     };
 
     const response = await fetch(url, options);
-    const jsonData = await response.json();
+    // const jsonData = await response.json();
     // console.log(jsonData.token)
     if (response.ok) {
       //   const jsonDt =
