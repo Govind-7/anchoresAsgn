@@ -1,0 +1,32 @@
+.home-bg {
+  background-color: rgb(25, 24, 24);
+  color: white;
+
+  height: 85vh;
+  padding: 10px;
+  overflow-y: hidden;
+  overflow-y: auto;
+}
+
+.create-acc-but {
+  background-color: transparent;
+  box-shadow: 0 0 7px white;
+  color: white;
+  border-radius: 10px;
+  border-width: 0px;
+  padding: 13px;
+  cursor: pointer;
+}
+
+.create-acc-but:hover {
+  color: skyblue;
+  box-shadow: inset 0 0 10px skyblue;
+}
+
+.login-link {
+  color: wheat;
+}
+
+.login-link:hover {
+  color: aqua;
+}

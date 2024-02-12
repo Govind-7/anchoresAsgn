@@ -3,6 +3,7 @@ import Cookies from "js-cookie";
 
 import { Navigate } from "react-router-dom";
 import Navbar from "../Navbar";
+import "./index.css";
 
 const Login = (props) => {
   const [isClicked, setClick] = useState(false);
@@ -80,41 +81,47 @@ const Login = (props) => {
   return (
     <div>
       <Navbar />
-      <h2>Login Your Account</h2>
-      {isClicked ? (
-        <form onSubmit={verifyPass}>
-          <p>
-            Please verify your email ID to continue We have sent an OTP to this-
-            {email.toUpperCase()}
-          </p>
-          <br />
-          <input
-            value={pass}
-            onChange={(e) => {
-              setPass(e.target.value);
-            }}
-            required
-            type="text"
-            placeholder="Enter OTP"
-          />
-          <br />
-          <button type="submit">Countinue</button>
-        </form>
-      ) : (
-        <form onSubmit={verification}>
-          <input
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-            required
-            type="text"
-            placeholder="Enter Your Email Id"
-          />
-          <br />
-          <button type="submit">Countinue</button>
-        </form>
-      )}
+      <div className="home-bg">
+        <h2>Login Your Account</h2>
+        {isClicked ? (
+          <form onSubmit={verifyPass}>
+            <p>
+              Please verify your email ID to continue We have sent an OTP to
+              this-
+              {email.toUpperCase()}
+            </p>
+            <br />
+            <input
+              value={pass}
+              onChange={(e) => {
+                setPass(e.target.value);
+              }}
+              required
+              type="text"
+              placeholder="Enter OTP"
+            />
+            <br />
+            <button type="submit">Countinue</button>
+          </form>
+        ) : (
+          <form onSubmit={verification}>
+            <input
+              className="login-input"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+              required
+              type="text"
+              placeholder="Enter Your Email Id"
+            />
+            <br />
+            <button className="create-acc-but" type="submit">
+              Countinue
+            </button>
+          </form>
+        )}
+      </div>
     </div>
   );
 };
